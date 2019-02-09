@@ -3,9 +3,9 @@ const app = express();
 const port = 3000;
 
 // implement API routes
-const authorAPI = require('./server/author-api');
+const authorsAPI = require('./server/authors-api');
 
-app.use('/authors', authorAPI);
+app.use('/authors', authorsAPI);
 
 // catch all other routes and return just a simple message
 app.all('*', (req, res) => res.send('Hello World!'));
