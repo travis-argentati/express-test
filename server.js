@@ -4,6 +4,7 @@ const port = 3000;
 
 // implement API routes
 const authorsAPI = require('./server/authors-api');
+const booksAPI = require('./server/books-api');
 
 app.use('/authors', authorsAPI);
 app.use('/books', booksAPI);
